@@ -5,46 +5,57 @@
 			<item type="label" name="AllCategories">
 				<translation language="nl"><![CDATA[alle categorieën]]></translation>
 				<translation language="en"><![CDATA[all categories]]></translation>
+				<translation language="fr"><![CDATA[toutes les catégories]]></translation>
 			</item>
 			<item type="label" name="OnCategory">
 				<translation language="nl"><![CDATA[category "%1$s"]]></translation>
 				<translation language="en"><![CDATA[categorie "%1$s"]]></translation>
+				<translation language="fr"><![CDATA[catégorie "%1$s"]]></translation>
 			</item>
 			<item type="label" name="Image">
 				<translation language="nl"><![CDATA[afbeelding]]></translation>
 				<translation language="en"><![CDATA[image]]></translation>
+				<translation language="fr"><![CDATA[image]]></translation>
 			</item>
 			<item type="label" name="Images">
 				<translation language="nl"><![CDATA[afbeeldingen]]></translation>
 				<translation language="en"><![CDATA[images]]></translation>
+				<translation language="fr"><![CDATA[images]]></translation>
 			</item>
 			<item type="message" name="ImagesInAlbum">
 				<translation language="nl"><![CDATA[%1s afbeeldingen in het album]]></translation>
 				<translation language="en"><![CDATA[%1s images in the album]]></translation>
+				<translation language="fr"><![CDATA[%1s images dans l'album]]></translation>
 			</item>
 			<item type="label" name="PreviousAlbum">
 				<translation language="nl"><![CDATA[vorige album]]></translation>
 				<translation language="en"><![CDATA[previous album]]></translation>
+				<translation language="fr"><![CDATA[album précédent]]></translation>
 			</item>
 			<item type="label" name="NextAlbum">
 				<translation language="nl"><![CDATA[volgende album]]></translation>
 				<translation language="en"><![CDATA[next album]]></translation>
+				<translation language="fr"><![CDATA[album suivant]]></translation>
 			</item>
 			<item type="label" name="PreviousImage">
 				<translation language="nl"><![CDATA[vorige afbeelding]]></translation>
 				<translation language="en"><![CDATA[previous image]]></translation>
+				<translation language="fr"><![CDATA[image précédente]]></translation>
 			</item>
 			<item type="label" name="NextImage">
 				<translation language="nl"><![CDATA[volgende afbeelding]]></translation>
 				<translation language="en"><![CDATA[next image]]></translation>
+				<translation language="fr"><![CDATA[image suivante]]></translation>
 			</item>
 			<item type="action" name="Detail">
 				<translation language="nl"><![CDATA[detail]]></translation>
 				<translation language="en"><![CDATA[detail]]></translation>
+				<translation language="fr"><![CDATA[détail]]></translation>
 			</item>
 			<item type="action" name="Image">
 				<translation language="nl"><![CDATA[afbeelding]]></translation>
 				<translation language="en"><![CDATA[image]]></translation>
+				<translation language="fr"><![CDATA[image]]></translation>
 			</item>
 			<item type="action" name="LightboxImage">
 				<translation language="nl"><![CDATA[afbeelding]]></translation>
