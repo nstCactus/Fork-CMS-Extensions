@@ -128,7 +128,7 @@ class BackendPhotogalleryEditImage extends BackendBaseActionEdit
 		$this->tpl->assign('record', $this->record);
 		$this->tpl->assign('album_id', $this->album_id);
 
-		$this->tpl->assign('previewImageHTML', BackendPhotogalleryHelper::getPreviewHTML128x128_crop($this->record['set_id'], $this->getModule(), $this->record['filename']));
+		$this->tpl->assign('previewImageHTML', BackendPhotogalleryHelper::getPreviewHTML128x128_crop($this->record['set_id'], $this->getModule(), $this->record['filename'], $this->getParameter('report', 'string') == 'picture_rotated'));
 	}
 
 	/**

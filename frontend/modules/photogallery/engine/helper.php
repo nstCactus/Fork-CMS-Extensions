@@ -12,6 +12,10 @@
  */
 class FrontendPhotogalleryHelper
 {
+	/**
+	 * Holds the list of images that needs to be appended the timestamp querystring
+	 */
+	private static $updatedImages = array();
 
 	/**
 	 * Generate a correct path
@@ -67,9 +71,13 @@ class FrontendPhotogalleryHelper
 	{
 		$original 	= self::getOriginalPath($set_id, $filename);
 		$image 		= self::getImagePath($set_id, $filename, array('width' => $width, 'height' => $height, 'method' => $method));
-		
-		if( ! SpoonFile::exists(FRONTEND_FILES_PATH . '/' . $image) && SpoonFile::exists(FRONTEND_FILES_PATH . '/' . $original)   )
+		$forceUpdate = '';
+
+		$imagePath = FRONTEND_FILES_PATH . '/' . $image;
+		if(!SpoonFile::exists($imagePath) && SpoonFile::exists(FRONTEND_FILES_PATH . '/' . $original))
 		{
+			FrontendPhotogalleryHelper::$updatedImages[] = $imagePath;
+
 			$forceOriginalAspectRatio = $method == 'crop' ? false : true;
 			$allowEnlargement = true;
 			
@@ -79,6 +87,11 @@ class FrontendPhotogalleryHelper
 			$thumb->parseToFile(FRONTEND_FILES_PATH . '/' . $image,	100);
 		}
 
-		return FRONTEND_FILES_URL . '/' . $image;
+		if(in_array($imagePath, FrontendPhotogalleryHelper::$updatedImages))
+		{
+			$forceUpdate = '?t=' . time();
+		}
+
+		return FRONTEND_FILES_URL . '/' . $image . $forceUpdate;
 	}
 }

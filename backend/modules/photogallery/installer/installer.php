@@ -72,6 +72,7 @@ class PhotogalleryInstaller extends ModuleInstaller
 		$this->setActionRights(1, 'photogallery', 'upload_image');
 		$this->setActionRights(1, 'photogallery', 'settings');
 		$this->setActionRights(1, 'photogallery', 'copy');
+		$this->setActionRights(1, 'photogallery', 'rotate_picture');
 
 		// make module searchable
 		$this->makeSearchable('photogallery');

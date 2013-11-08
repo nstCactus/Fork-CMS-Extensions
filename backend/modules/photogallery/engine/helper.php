@@ -42,9 +42,9 @@ class BackendPhotogalleryHelper
 	 * @param string $filename The filename of the image
 	 * @return string
 	 */
-	public static function getPreviewHTML128x128_crop($set_id, $module, $filename)
+	public static function getPreviewHTML128x128_crop($set_id, $module, $filename, $noCache = false)
 	{
-		$image = FRONTEND_FILES_URL . '/' . $module . '/sets/backend/' . $set_id . '/128x128crop/' . $filename;
+		$image = FRONTEND_FILES_URL . '/' . $module . '/sets/backend/' . $set_id . '/128x128crop/' . $filename . ($noCache ? '?t=' . time() : '');
 		return '<img src="' . $image . '" width="128" height="128" />';
 	}
 

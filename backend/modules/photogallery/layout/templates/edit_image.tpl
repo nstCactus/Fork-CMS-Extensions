@@ -82,7 +82,9 @@
 
 								<div class="options">
 									<p>
-										{$previewImageHTML}
+										{$previewImageHTML}<br />
+										<a href="{$var|geturl:'rotate_image'}&amp;id={$record.id}&amp;album_id={$record.album_id}&amp;angle=90">{$lblRotateCounterClockwise|ucfirst}</a><br />
+										<a href="{$var|geturl:'rotate_image'}&amp;id={$record.id}&amp;album_id={$record.album_id}&amp;angle=-90">{$lblRotateClockwise|ucfirst}</a>
 									</p>
 								</div>
 							</div>

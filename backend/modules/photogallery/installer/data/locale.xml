@@ -340,6 +340,14 @@
 				<translation language="en"><![CDATA[animation speed]]></translation>
 				<translation language="nl"><![CDATA[animatie snelheid]]></translation>
 			</item>
+			<item type="label" name="RotateClockwise">
+				<translation language="en"><![CDATA[rotate clockwise]]></translation>
+				<translation language="fr"><![CDATA[Pivoter dans le sens horaire]]></translation>
+			</item>
+			<item type="label" name="RotateCounterClockwise">
+				<translation language="en"><![CDATA[rotate counter clockwise]]></translation>
+				<translation language="fr"><![CDATA[Pivoter dans le sens antihoraire]]></translation>
+			</item>
 			<item type="message" name="AddedCategory">
 				<translation language="en"><![CDATA[Category "%1$s" was added.]]></translation>
 				<translation language="nl"><![CDATA[Categorie "%1$s" werd toegevoegd.]]></translation>
@@ -348,7 +356,10 @@
 				<translation language="en"><![CDATA[Category "%1$s" was saved.]]></translation>
 				<translation language="nl"><![CDATA[Categorie "%1$s" werd opgeslagen.]]></translation>
 			</item>
-			
+			<item type="message" name="PictureRotated">
+				<translation language="en"><![CDATA[Picture "%1$s" was rotated.]]></translation>
+				<translation language="fr"><![CDATA[La photo "%1$s" a été pivotée.]]></translation>
+			</item>
 			<item type="error" name="RSSDescription">
 				<translation language="en"><![CDATA[Photogallery RSS description is not yet provided. <a href="%1$s">Configure</a>]]></translation>
 				<translation language="nl"><![CDATA[Fotogallerij RSS beschrijving is nog niet geconfigureerd. <a href="%1$s">Configureer</a>]]></translation>
